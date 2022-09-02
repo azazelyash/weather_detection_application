@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:weather_detection_app/utilities/constants.dart';
 
+// ignore: use_key_in_widget_constructors
 class CityScreen extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _CityScreenState createState() => _CityScreenState();
 }
 
@@ -17,27 +19,27 @@ class _CityScreenState extends State<CityScreen> {
             fit: BoxFit.cover,
           ),
         ),
-        constraints: BoxConstraints.expand(),
+        constraints: const BoxConstraints.expand(),
         child: SafeArea(
           child: Column(
             children: <Widget>[
               Align(
                 alignment: Alignment.topLeft,
-                child: FlatButton(
+                child: ElevatedButton(
                   onPressed: () {},
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back_ios,
                     size: 50.0,
                   ),
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 child: null,
               ),
-              FlatButton(
+              ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   'Get Weather',
                   style: kButtonTextStyle,
                 ),
