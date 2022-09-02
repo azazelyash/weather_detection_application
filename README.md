@@ -1,16 +1,7 @@
 # weather_detection_app
 
-A new Flutter project.
+This is a simple application that was made in flutter using the following packages:
 
-## Getting Started
+> 1. geolocator
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app uses the feature of <i><b>async</b></i>, this makes the app continue to perform the following task in the background while the rest of the app is being continuously built, this does not stop the rest of the app from pausing its execution.
