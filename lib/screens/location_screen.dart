@@ -30,18 +30,24 @@ class _LocationScreenState extends State<LocationScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Icon(
-                      Icons.near_me,
-                      size: 50.0,
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: const Icon(
+                        Icons.near_me,
+                        size: 50.0,
+                      ),
                     ),
                   ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Icon(
-                      Icons.location_city,
-                      size: 50.0,
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: const Icon(
+                        Icons.location_city,
+                        size: 50.0,
+                      ),
                     ),
                   ),
                 ],
@@ -76,3 +82,8 @@ class _LocationScreenState extends State<LocationScreen> {
     );
   }
 }
+
+
+// var temperature = decodedData['main']['temp'];
+//     var cityName = decodedData['name'];
+//     var condition = decodedData['weather'][0]['id'];
