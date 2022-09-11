@@ -10,6 +10,9 @@ class Location {
           desiredAccuracy: LocationAccuracy.low);
       latitude = position.latitude;
       longitude = position.longitude;
+
+      // print(latitude);
+      // print(longitude);
     } catch (e) {
       // ignore: avoid_print
       print(e);

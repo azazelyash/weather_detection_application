@@ -16,6 +16,7 @@ class NetworkHelper {
 
       return decodedData;
     } else {
+      // ignore: avoid_print
       print(response.statusCode);
     }
   }
