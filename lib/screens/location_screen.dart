@@ -78,22 +78,33 @@ class _LocationScreenState extends State<LocationScreen> {
                       },
                       child: const Icon(
                         Icons.near_me,
-                        size: 50.0,
+                        size: 32.0,
                       ),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return CityScreen();
-                        }));
+                      onTap: () async {
+                        var typedName = await Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return CityScreen();
+                            },
+                          ),
+                        );
+                        if (typedName != null) {
+                          print(typedName);
+                          var weatherData =
+                              await weather.getCityWeather(cityName);
+                          // updateUI(weatherData);
+                          print(weatherData);
+                        }
                       },
                       child: const Icon(
                         Icons.location_city,
-                        size: 50.0,
+                        size: 32.0,
                       ),
                     ),
                   ),
